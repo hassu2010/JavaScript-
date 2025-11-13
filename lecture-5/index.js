@@ -1,4 +1,7 @@
 
+// I use \n for line break
+
+
 // //  Simple ATM Simulator
 let balance = 1000;// Default balance
 const pin = "1234";// Correct PIN
@@ -7,6 +10,7 @@ const pin = "1234";// Correct PIN
 let enteredPin = prompt("Enter PIN:");
 
  // Step 2: Show main menu
+
 if (enteredPin !== pin) {
   alert("Incorrect PIN!");
 } else {
@@ -20,18 +24,18 @@ if (enteredPin !== pin) {
   );
  // Step 3: Handle menu options
   if (choice === "1") {
-    alert("Your balance: $" + balance);
+    alert("Your balance: Rs" + balance);
   } else if (choice === "2") {
     let amount = +prompt("Enter amount to withdraw:");
     if (amount > balance) alert("Insufficient funds!");
     else {
       balance -= amount;
-      alert("Withdrawn! New balance: $" + balance);
+      alert("Withdrawn! New balance: Rs" + balance);
     }
   } else if (choice === "3") {
     let amount = +prompt("Enter amount to deposit:");
     balance += amount;
-    alert("Deposited! New balance: $" + balance);
+    alert("Deposited! New balance:RS" + balance);
   } else if (choice === "4") {
     alert("Thanks for using JS ATM!");
   } else {
