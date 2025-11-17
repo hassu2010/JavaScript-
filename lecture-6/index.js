@@ -16,11 +16,12 @@
   }
   console.log( "-----------------------------Print the multiplication table of 7.---------------------------------");
      for (let i = 1; i <= 10; i++) {
-         console.log(` ${7 * i}`);
+         console.log(7 * i);
     }
 
 console.log("---------------------Star Pyramid---------------------------------");
 
+ //first i write for loop and seconed i Write variable of star in block of loop and will know how to make diamond shape of star
   for (let i = 1; i <= 6; i++) {
    let star =""; 
   for (let j = 1; j <= i; j++){
@@ -28,3 +29,11 @@ console.log("---------------------Star Pyramid---------------------------------"
   }
     console.log(star);
 }
+    //when you make diamond shape so try this both together
+//   for (let i = 6-1; i >= 1; i--) {
+//    let star =""; 
+//   for (let j = 1; j <= i; j++){
+//     star+="*";
+//   }
+//     console.log(star);
+// }
